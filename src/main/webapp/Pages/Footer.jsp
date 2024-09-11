@@ -1,6 +1,6 @@
 <div class="footer-top">
     <div class="footer-logo">
-        <img src="<%= request.getContextPath() %>/Assets/splashwear.png" alt="Logo">
+        <img src="<%= request.getContextPath() %>/img/splashwear.png" alt="Logo">
     </div>
     <div class="quick-links">
         <h3>Link rapidi</h3>
