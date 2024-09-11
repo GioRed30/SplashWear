@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3d5ff; /* Azzurro pastello */
+}
+
+.product-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Bianco */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Ombre leggere */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section {
+    width: 35%;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    text-align: center;
+    color: #007bff; /* Blu pastello */
+}
+
+.right-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quantity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quantity-section h3 {
+    color: #007bff; /* Blu pastello */
+    margin-bottom: 5px;
+}
+
+.quantity-section input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #a3d5ff;
+    border-radius: 4px;
+}
+
+.description-section h3 {
+    color: #007bff; /* Blu pastello */
+    margin-bottom: 5px;
+}
+
+.description-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a3d5ff;
+    border-radius: 4px;
+    resize: none;
+}
+
+.add-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff; /* Blu pastello */
+    background-color: #ffffff; /* Bianco */
+}
+
+.btn:hover {
+    background-color: #a3d5ff; /* Azzurro pastello */
+}
+
+.add {
+    margin-top: 20px;
+}
