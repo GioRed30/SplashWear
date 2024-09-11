@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3d5ff; /* Azzurro pastello */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #ffffff; /* Bianco per il contenitore */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Blu pastello per il titolo */
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #e0f7fa; /* Azzurro chiarissimo per la tabella */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #b2ebf2; /* Bordo azzurro chiaro */
+}
+
+.cart-table th {
+    background-color: #007bff; /* Blu pastello per l'intestazione */
+    color: #ffffff; /* Testo bianco per contrasto */
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.product-info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #007bff; /* Blu pastello per il nome del prodotto */
+}
+
+.product-info p {
+    margin: 0;
+    color: #a3d5ff; /* Azzurro pastello per la descrizione del prodotto */
+    font-size: 14px;
+}
+
+.cart-summary {
+    background-color: #cce4ff; /* Azzurro molto chiaro per il riepilogo */
+    padding: 20px;
+    border-top: 1px solid #b2ebf2;
+    border-radius: 10px;
+}
+
+.cart-summary h2 {
+    margin-top: 0;
+    color: #007bff; /* Blu pastello per il titolo del riepilogo */
+}
+
+.cart-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-summary ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #023e8a; /* Testo scuro per contrasto */
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; /* Blu pastello per il pulsante */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #a3d5ff; /* Azzurro pastello per l'hover */
+}
