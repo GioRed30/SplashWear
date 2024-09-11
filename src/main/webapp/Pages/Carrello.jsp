@@ -1,5 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="stylesheet" href="../Styles/Carrello.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +60,7 @@
       <li>Spedizione: <span>&euro;5.00</span></li>
       <li><strong>Totale: <span>&euro;45.00</span></strong></li>
     </ul>
-    <a href="Pagamento.jsp"><button class="checkout-btn">Procedi al Checkout</button></a>
+    <a href="pagamento.jsp"><button class="checkout-btn">Procedi al Checkout</button></a>
   </div>
 </div>
 </body>
