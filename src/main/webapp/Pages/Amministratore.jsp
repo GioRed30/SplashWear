@@ -6,6 +6,7 @@
   <title>Dettaglio Prodotto</title>
   <link rel="stylesheet" href="../Styles/Amministratore.css">
 </head>
+
 <body>
 <div class="product-container">
   <!-- Sezione immagine e nome prodotto -->
