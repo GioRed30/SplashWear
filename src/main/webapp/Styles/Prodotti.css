@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    vertical-align: middle;
+    display: flex;
+    font-family: 'Calibri', sans-serif !important;
+    background-size: cover; /* Adatta l'immagine all'intera pagina */
+    background-repeat: repeat; /* Evita che l'immagine si ripeta */
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Permette di avvolgere gli elementi su più righe se necessario */
+    gap: 15px; /* Spaziatura tra i prodotti */
+    justify-content: center; /* Centra i prodotti orizzontalmente */
+}
+
+.product-wrapper {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Nasconde il contenuto che esce dai bordi */
+    flex: 1 1 calc(25% - 15px); /* Ogni prodotto occupa il 25% della larghezza del contenitore meno lo spazio di gap */
+    box-sizing: border-box; /* Include padding e bordo nella larghezza e altezza totale */
+}
+
+.product-img {
+    height: 20rem; /* Riduci l'altezza del contenitore delle immagini */
+    display: flex; /* Usa Flexbox per gestire l'allineamento delle immagini */
+    align-items: center; /* Allinea verticalmente l'immagine al centro */
+    justify-content: center; /* Allinea orizzontalmente l'immagine al centro */
+    overflow: hidden; /* Nasconde la parte dell'immagine che esce dal contenitore */
+    width: 100%; /* Assicura che il contenitore occupi tutta la larghezza disponibile */
+}
+
+.product-img img {
+    height: 20rem; /* Riduci l'altezza dell'immagine */
+    width: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
+    max-width: 100%; /* Garantisce che l'immagine non superi la larghezza del contenitore */
+    object-fit: cover; /* Ritaglia l'immagine se necessario per adattarla al contenitore */
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.product-action {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: all 0.6s ease 0s;
+}
+
+.product-action-style {
+    background-color: rgba(252, 155, 25, 0.7);
+    box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    padding: 16px 2px 12px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.product-action-style > a {
+    color: #979797;
+    line-height: 1;
+    padding: 0 21px;
+    position: relative;
+}
+
+.product-action-style > a.action-plus {
+    font-size: 18px;
+}
+
+.product-wrapper:hover .product-action {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.product-action-style > a > img
+{
+    max-width: 3rem;
+    max-height: 2rem;
+
+}
