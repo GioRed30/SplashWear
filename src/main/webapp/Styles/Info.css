@@ -1,0 +1,40 @@
+.container-footer {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-top {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, .6) ;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 190px;
+    height: auto;
+}
+
+.contact-info
+{
+    margin-right: 8rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}

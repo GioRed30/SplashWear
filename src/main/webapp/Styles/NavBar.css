@@ -1,0 +1,152 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin-top: 0;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(255, 255, 255, .6) ;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.2rem;
+    color: #0e2431;
+}
+
+.search {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 2px solid rgba(252, 155, 25, 1);
+    padding: 0 2rem;
+    background: rgba(255, 255, 255, 0.7);
+}
+.search::placeholder
+{
+    color: #FC9B19FF;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.icon > a > img
+{
+    width: 2.1rem;
+}
+
+.nav-logo{
+    width: 7rem;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+.line {
+    fill: none;
+    stroke: #FC9B19FF;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 3;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}
+
+.tipi-menu
+{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 7rem;
+    padding-right: 3rem;
+    background: rgba(255, 255, 255, .4);
+}
+
+.tipi-menu-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.tipi-menu-list > li > a{
+    border: none;
+
+}
