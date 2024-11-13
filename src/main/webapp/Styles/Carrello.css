@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Calibri', sans-serif !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carrello{
+    margin-top: 10rem;
+}
+
+.prodotto {
+    width: max-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.prodotto:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+
+.prodotto > img{
+    background: transparent;
+    width: fit-content;
+    max-height: 12rem;
+    margin-top: 2rem;
+}
+
+.prod-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.prezzo-prod {
+    border: 2px solid rgba(252, 155, 25, 1);
+    border-radius: 20px;
+    padding: 8px;
+    width: 90%;
+    background: rgba(252, 155, 25, 0.5);
+    font-size: 18px;
+    text-align: center;
+}
+
+.nome-prod {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.elimina-prod {
+    border: 2px solid rgba(53,168,246,1);
+    border-radius: 20px;
+    padding: 8px;
+    width: max-content;
+    background: rgba(53,168,246, 0.5);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav {
+    width: 100%;               /* Lunghezza della navbar per tutta la pagina */
+    height: 5rem;              /* Altezza della navbar */
+    position: fixed;           /* Posizionamento fisso in alto */
+    top: 0;                    /* Allineamento in alto */
+    left: 0;                   /* Allineamento a sinistra */
+    display: flex;             /* Disposizione degli elementi in linea */
+    align-items: center;       /* Centra verticalmente il contenuto */
+    background-color: rgba(255, 255, 255, 0.6);    /* Colore di sfondo della navbar */
+    padding: 0 1rem;           /* Spaziatura orizzontale interna */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Ombra per effetto di profondità */
+    z-index: 1000;             /* Assicura che sia sopra altri elementi */
+}
+
+.nav img.shopper {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.nav-input {
+    flex: 1;
+    max-width: 7rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: .3rem;
+    right: 10rem;
+    font-size: 1rem;
+    border: 2px solid rgba(252, 155, 25, 1);
+    border-radius: 20px;
+    background-color: rgba(252, 155, 25, 0.6);
+    color: black;
+
+}
+
+.nav-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background-color: rgba(53,168,246, 0.5);
+    border: 2px solid rgba(53,168,246,1);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+    color: #FFFFFF;
+    margin-right: 2rem;
+}

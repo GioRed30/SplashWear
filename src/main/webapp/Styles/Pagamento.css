@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    font-family: 'Calibri', sans-serif !important;
+    background-size: cover; /* Adatta l'immagine all'intera pagina */
+    background-repeat: repeat; /*l'immagine si ripete */
+}
+
+.form{
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    max-width: 70rem;
+    margin: 0 auto;
+    max-height: max-content !important;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.form > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.form > form
+{
+    margin: 2rem 0 0 6rem;
+
+}
+
+input[type="text"] {
+    border: 2px solid orange; /* Bordo arancione */
+    border-radius: 25px; /* Rende il bordo ovale */
+    padding: 10px; /* Aggiunge spazio interno per un aspetto migliore */
+    width: 80%; /* Imposta una larghezza desiderata per il campo di input */
+    font-size: 16px; /* Regola la dimensione del testo */
+    box-sizing: border-box; /* Garantisce che padding e bordo non aumentino la dimensione totale dell'input */
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.div-divcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > form > *
+{
+    margin-bottom: .05rem;
+}
+
+.divisione_content{
+
+    display: flex;
+    flex-direction: row;
+    grid-auto-rows: 15px;
+    column-gap: 25px;
+}
+
+.pagamento{
+    border-radius: 25px; /* Rende il bordo ovale */
+    padding: 10px; /* Aggiunge spazio interno per un aspetto migliore */
+    width: max-content; /* Imposta una larghezza desiderata per il campo di input */
+    font-size: 20px; /* Regola la dimensione del testo */
+    box-sizing: border-box; /* Garantisce che padding e bordo non aumentino la dimensione totale dell'input */
+    background: rgba(255, 255, 255, 0.6);
+    position: relative;
+    height: max-content;
+}
+
+.pagamento > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem 0 0 1rem;
+}
+
+.pagamento > h3{
+    margin-left: 5rem;
+}
+
+
+.text_box {
+    border: 2px solid orange; /* Bordo arancione */
+    border-radius: 25px; /* Rende il bordo ovale */
+    width: 25rem; /* Imposta una larghezza desiderata per il campo di input */
+    font-size: 16px; /* Regola la dimensione del testo */
+    box-sizing: border-box; /* Garantisce che padding e bordo non aumentino la dimensione totale dell'input */
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    height: 10rem;
+}
+
+.payment_button {
+    border: 2px solid rgba(53,168,246,1);
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(53,168,246, 0.5);
+
+}
